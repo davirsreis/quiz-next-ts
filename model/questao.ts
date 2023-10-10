@@ -43,6 +43,7 @@ export default class QuestaoModel {
       const respostaSelecionada = indice === i
       const deveRelevar = respostaSelecionada || resposta.certa
       return deveRelevar ? resposta.revelar() : resposta
+      // return resposta.revelar() // Caso queira revelar todas as respostas
     })
     return new QuestaoModel(this.id, this.enunciado, respostas, acertou)
   }
