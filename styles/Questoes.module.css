@@ -1,0 +1,16 @@
+.questoes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.listagem {
+  display: flex;
+  flex-direction: column;
+}
+
+.listaQuestoes {
+  border: 1px #000 solid;
+  padding: 10px;
+}

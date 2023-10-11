@@ -13,7 +13,7 @@ interface QuestionarioProps {
 export default function Questionario(props: QuestionarioProps) {
 
   function respostaFornecida(indice: number) {
-    if(props.questao.naoRespondida) {
+    if (props.questao.naoRespondida) {
       props.questaoRespondida(props.questao.responderCom(indice))
     }
   }
@@ -23,13 +23,15 @@ export default function Questionario(props: QuestionarioProps) {
       {props.questao ?
         <Questao
           valor={props.questao}
-          tempoPraResposta={6}
+          tempoPraResposta={10}
           respostaFornecida={respostaFornecida}
           tempoEsgotado={props.irParaProximoPasso} />
         : false}
 
-      <Botao onClick={props.irParaProximoPasso}
-        texto={props.ultima ? 'Finalizar' : 'Próxima'} />
+      <div style={{ marginTop: "40px" }}>
+        <Botao onClick={props.irParaProximoPasso}
+          texto={props.ultima ? 'Finalizar' : 'Próxima'} />
+      </div>
     </div>
   )
 }

@@ -1,0 +1,19 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.texto {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.botoes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
