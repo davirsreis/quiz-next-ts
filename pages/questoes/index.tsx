@@ -8,9 +8,11 @@ export default function Questoes() {
   function renderizarQuestoes() {
     return questoes.map(questao => {
       return (
-        <div className={styles.listaQuestoes}>
+        <div className={styles.exibirQuestoes}>
           <Link href={`/questoes/${questao.id}`}>
-            {questao.enunciado}
+            <div className={styles.listaQuestoes}>
+              {questao.enunciado}
+            </div>
           </Link>
         </div>
       )
@@ -23,7 +25,7 @@ export default function Questoes() {
       <div className={styles.listagem}>
         {renderizarQuestoes()}
       </div>
-      <div style={{marginTop: '20px'}}>
+      <div style={{ marginTop: '20px' }}>
         <Botao texto='Voltar ao início' href='/' />
       </div>
     </div>

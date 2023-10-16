@@ -15,7 +15,6 @@ export default function QuestaPorId() {
 
   return (
     <div>
-      <h1>Questão</h1>
       {exibirQuestao()}
     </div>
   )

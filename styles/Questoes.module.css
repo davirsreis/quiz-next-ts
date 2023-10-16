@@ -1,3 +1,12 @@
+.exibirQuestoes {
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+.exibirQuestoes:hover {
+  transform: scale(1.1);
+}
+
 .questoes {
   display: flex;
   flex-direction: column;
@@ -12,5 +21,6 @@
 
 .listaQuestoes {
   border: 1px #000 solid;
-  padding: 10px;
+  margin: 5px;
+  padding: 5px;
 }

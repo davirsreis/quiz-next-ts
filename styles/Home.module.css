@@ -1,13 +1,22 @@
 .home {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   height: 100vh;
 }
 
+.borda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  padding: 100px;
+}
+
 .texto {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 700;
 }
 
