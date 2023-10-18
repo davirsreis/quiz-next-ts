@@ -21,8 +21,7 @@ A aplicação funciona no formato de Quiz onde será apresentado ao usuário per
 
 ## Link da aplicação
 
-<!-- []() -->
-Em breve
+[quiz-next-ts.vercel.app](https://quiz-next-ts.vercel.app/)
 
 ## Para executar
 
